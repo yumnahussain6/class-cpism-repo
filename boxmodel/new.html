@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            /* Center the container */
+            align-items: center;
+            /* Center the container vertically */
+            height: 100vh;
+            /* Full height of the viewport */
+            margin: 0;
+            /* Remove default margin */
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 equal columns */
+            gap: 10px;
+            /* Space between boxes */
+            width: 80%;
+            /* Adjust as needed */
+        }
+        
+        .box {
+            height: 200px;
+            /* Fixed height */
+            background-color: lightblue;
+            /* Background color for visibility */
+            border: 1px solid black;
+            /* Border for visibility */
+            display: flex;
+            /* Center content inside */
+            justify-content: center;
+            /* Center content horizontally */
+            align-items: center;
+            /* Center content vertically */
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+    </body>
+
+</html>
