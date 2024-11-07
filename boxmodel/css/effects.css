@@ -9,4 +9,5 @@ div{
 div:hover{
     width:400px;
     margin-left: 100px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }

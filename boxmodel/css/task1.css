@@ -1,0 +1,18 @@
+img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: abc 4s linear 2s infinite;
+}
+
+@keyframes abc {
+    from{
+       bottom:0%;
+        left:0%;
+    }
+    to{
+        bottom:100%;
+        left:100%;
+    }
+    
+}
