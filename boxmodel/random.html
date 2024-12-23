@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS is Cool!</title>
+</head>
+
+<body>
+    <h1 id="greeting">JavaScript will be my bestie!</h1>
+    <button id="magicButton">Click Me!</button>
+
+    <script>
+        // JavaScript starts here
+        const button = document.getElementById('magicButton');
+        const greeting = document.getElementById('greeting');
+
+        button.addEventListener('click', () => {
+            greeting.textContent = 'See? JS is kinda fun! 💖';
+        });
+    </script>
+</body>
+
+</html>
