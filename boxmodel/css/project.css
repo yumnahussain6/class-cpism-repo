@@ -1,9 +1,41 @@
-.nav-link{
-      color: burlywood;
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
 }
-.navbar{
-      background-color: #f3d2d2;
+
+.nav-link {
+    color: black;
 }
-.carousel-caption{
-      color: black;
+
+.navbar {
+    background-color: #3b519a;
+}
+
+.carousel-caption {
+    color: whitesmoke;
+}
+
+.navbar-brand {
+    height: 70px;
+    width: 100px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 650px;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    color: #3b519a;
+    text-decoration: double
+}
+
+.nav-item {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
