@@ -5,10 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/boxmodel/assets/bootstrap-5.3.3-dist/css/bm">
+    <style>
+        div {
+            text-align: center;
+        }
+        
+        h1 {
+            color: darkblue;
+        }
+        
+        button {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: brown;
+            font-size: larger;
+            background-color: bisque;
+            border-radius: 8px;
+        }
+        
+        .form-control {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
+    <div class="container mt-5 text-center">
+        <h1 class="text-center">Enter Your Range</h1>
+        <form id="rangeform" method="get" class="mt-4">
+            <div class="mb-3">
+                <label for="initialValue" class="form-label">Initial Value: </label>
+                <input type="number" class="form-control" id="initialValue" name="initialValue" placeholder="Enter the starting number" required>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="finalValue" class="form-label">Final Value:  </label>
+                <input type="number" class="form-control" id="finalValue" name="finalValue" placeholder="Enter the ending number" required>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+    <ul id="list"></ul>
+    <script>
+        document.getElementById('rangeform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let initialValue = parseInt(document.getElementById('initialValue').value);
+            let finalValue = parseInt(document.getElementById('finalValue').value);
+            let list = document.getElementById('list');
+            list.innerHTML = "";
+
+            if (finalValue > initialValue) {
+                for (let i = initialValue; i <= finalValue; i++) {
+                    let listitem = document.createElement('li');
+
+                    let label = "";
+                    if (i % 5 == 0) {
+                        label += " FizzBuzz ";
+                    } else if (i % 2 == 0) {
+                        label += " Fizz ";
+                    } else {
+                        label += " Buzz ";
+                    }
+
+                    listitem.textContent = i + label;
+                    list.appendChild(listitem);
+                }
+            } else {
+                let errorItem = document.createElement('li');
+                errorItem.textContent = "Error: Invalid range. Please try again.";
+                errorItem.style.color = "red";
+                list.appendChild(errorItem);
+            }
+        })
+    </script>
 </body>
+<script src="/boxmodel/assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
 </html>
