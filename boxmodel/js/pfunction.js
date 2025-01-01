@@ -1,14 +1,16 @@
-let b1;
-let b2;
-let a;
-function param(a){
-    console.log(a)
+let a = 0;
+let b = 0;
+
+function param(value) {
+    if (value === 1) {
+        a = value;
+    } else if (value === 2) {
+        b = value;
+    }
+    console.log(`Button Value Set: ${value}`);
 }
-function sum(b1,b2){
-    let n1 = parseInt(document.querySelector("#b1").value);
-    let n2 = parseInt(document.querySelector("#b2").value);
-    n1 = b1;
-    n2 = b2;
-    let c = n1+n2;
-    document.querySelector("#print").innerHTML=c;
+
+function sum() {
+    let add = a + b;
+    document.getElementById('result').textContent = `Sum: ${add}`;
 }
