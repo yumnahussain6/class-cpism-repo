@@ -1,0 +1,15 @@
+[
+    {
+    "name": "web designing",
+    "price":"50k",
+    "pages":"3 to 5",
+    "hosting":"10% extra charge",
+    "image":"assets/plane-1.avif"
+},
+   {"name": "web development",
+    "price":"150k",
+    "pages":"3 to 5",
+    "hosting":"20% extra charge",
+    "image":"assets/plane-2.jpg"
+    }
+]
