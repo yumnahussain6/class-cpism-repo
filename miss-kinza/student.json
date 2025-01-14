@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "name": "ali",
+    "nic":"true",
+    "contact":["03183771891", "034178781820"],
+    "addresss":[{"karachi":"saddar"}, {"lahore":"modal town"}]
+}
